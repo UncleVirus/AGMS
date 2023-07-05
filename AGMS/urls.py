@@ -21,7 +21,15 @@ from django.urls import include, path
 
 urlpatterns = [
     
-    path('', include('Authentication_App.urls')),
+    path('', include('Authentication_App.urls')), # This is the route to the home page
+
+
+    path('register/', include('Authentication_App.urls')), # Route to the registration page
+    
+
+
+
+
     path('admin/', admin.site.urls),
     
     
